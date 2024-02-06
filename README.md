@@ -49,6 +49,3 @@ Welcome to the Python Exam Study Repository! This repository contains Python cod
 
 ## Contributing
 Contributions to improve this repository are welcome! If you have additional coding examples, exercises, or corrections, feel free to submit a pull request.
-
-## License
-This repository is licensed under the [MIT License](LICENSE).
