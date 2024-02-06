@@ -1,0 +1,5 @@
+writeFile = 
+toLog = 
+
+writeFile.close()
+
