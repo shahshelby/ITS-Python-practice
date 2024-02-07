@@ -1,7 +1,3 @@
-workFile = # open the jackets file
-workFileContents = # read the jackets file
+workFile = open('jackets.txt', 'r')
+workFileContents = workFile.read()
 print(workFileContents)
-
-
-
-

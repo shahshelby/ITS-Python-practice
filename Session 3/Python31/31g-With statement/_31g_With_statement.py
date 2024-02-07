@@ -1,3 +1,3 @@
-# add with statement to open log.txt in write mode
+with open("log.txt","w") as writeFile:
 	toLog = input("What do you want to write to the log? ")
 	writeFile.write(toLog)
