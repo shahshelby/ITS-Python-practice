@@ -4,5 +4,5 @@ if annualSales >= 500000:
 elif annualSales >= 300000:
     print("Silver Customer")
 elif annualSales >= 100000:
-    print("Bronze Customer")
+    pass  # act as placeholder
 print("Thank you for your business")

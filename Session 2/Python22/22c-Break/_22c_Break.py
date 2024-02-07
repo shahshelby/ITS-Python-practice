@@ -5,7 +5,8 @@ while capitalGuess != "Riga":
     numberOfGuesses = numberOfGuesses + 1
     if numberOfGuesses > 3:
         print("You guessed incorrectly three times. Game over.")
+        break  # break out of while loop
     capitalGuess = input("Guess again. ")
 
-
-print("You guessed it. Riga is the capital of Latvia. It took you " + str(numberOfGuesses) + " guesses.")
+if numberOfGuesses <= 3:
+    print("You guessed it. Riga is the capital of Latvia. It took you " + str(numberOfGuesses) + " guesses.")
