@@ -1,7 +1,8 @@
-capitalGuess = input("What is the capital of Latvia? ")
+capitalGuess = input("What is the capital of Latvia? ").upper()
 numberOfGuesses = 1
 
-while capitalGuess != "Riga":
+# before it was not .upper so typing riga will not match it
+while capitalGuess != "RIGA":
     numberOfGuesses = numberOfGuesses + 1
     if numberOfGuesses > 3:
         print("You guessed incorrectly three times. Game over.")
