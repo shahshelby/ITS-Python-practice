@@ -3,10 +3,11 @@ def subtotal(orderAmt, salesTax):
     return subtotal
 
 
-#add firstOrderTotal variable here
-#add secondOrderTotal variable here
-#add thirdOrderTotal variable here
-thirdTax = input("Enter your sales tax rate.")
+firstOrderTotal = subtotal(300, .08)
+secondOrderTotal = subtotal(400, .06)
+
+thirdOrderAmount = input("What is the order amount? ")
+thirdTax = input("Enter your sales tax rate. ")
 thirdOrderTotal = subtotal(thirdOrderAmount, thirdTax)
 
 print ("Your subtotal for the first order is %.2f" %firstOrderTotal)

@@ -1,9 +1,11 @@
-def subtotal(orderAmt, salesTax):
+def subtotal(orderAmt, salesTax=.08):
     subtotal = float(orderAmt) * (1 + float(salesTax))
-    
+    return subtotal
 
-# add orderMsg function here
 
+def orderMsg():  # no arguments
+    print("Thanks for ordering")
+    return
 
 
 firstOrderTotal = subtotal(300)
@@ -15,7 +17,8 @@ thirdOrderTotal = subtotal(thirdOrderAmount, thirdTax)
 
 fourthOrderTotal = subtotal(800)
 
-print ("Your subtotal for the first order is %.2f" %firstOrderTotal)
-print ("Your subtotal for the second order is %.2f" %secondOrderTotal)
-print ("Your subtotal for the third order is %.2f" %thirdOrderTotal)
-print ("Your subtotal for the fourth order is %.2f" %fourthOrderTotal)
+print("Your subtotal for the first order is %.2f" % firstOrderTotal)
+print("Your subtotal for the second order is %.2f" % secondOrderTotal)
+print("Your subtotal for the third order is %.2f" % thirdOrderTotal)
+print("Your subtotal for the fourth order is %.2f" % fourthOrderTotal)
+orderMsg()
