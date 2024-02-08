@@ -1,8 +1,9 @@
 import datetime
-todayWithTime = #today with the time
-todayWithoutTime = #today without the time
+todayWithTime = datetime.datetime.now() #today with the time
+# print current datetime with all format
 print(todayWithTime)
-print(todayWithoutTime)
-print("The current date is", datetime.datetime.strftime(#today without time in mm/dd/yyy format))
-print("The current time is", datetime.datetime.strftime(#today with time in hh:mm:ss format))
+# print just Hour, Minute, Second
+print("The current time is", datetime.datetime.strftime(todayWithTime, "%H:%M:%S"))
+# get the day in the week
+print(datetime.datetime.weekday(todayWithTime))
 

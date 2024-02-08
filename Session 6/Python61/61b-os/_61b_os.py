@@ -1,5 +1,6 @@
-#add the os module
+import os
 
-dirName = input("Enter the name of the folder you want to create.")
-#add a directory with the name the user entered
+dirName = input("Enter the name of the folder you want to create. ")
+os.mkdir(dirName)
+
 print("Directory created.")
